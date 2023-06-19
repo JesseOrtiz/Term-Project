@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON file</title>
+  <link rel="stylesheet" href="stylepage.css">
+</head>
+<body>
+  <button id="fetchButton">Fetch JSON file</button>
+  <div id="output"></div>
+
+  <script>
+    document.getElementById('fetchButton').addEventListener('click', function () {
+      // Live Server Address 
+      fetch('http://127.0.0.1:5501/par_1.json')
+        .then(function (response) {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Error: ' + response.status);
+          }
+        })
+        .then(function (jsonData) {
+          var outputContainer = document.getElementById('output');
+          outputContainer.innerHTML = '';
+
+          jsonData.degrees.forEach(function (degreeData) {
+            var degreeContainer = document.createElement('div');
+            degreeContainer.className = 'degree';
+
+            var schoolHeading = document.createElement('h3');
+            schoolHeading.textContent = degreeData.school;
+
+            var programParagraph = document.createElement('p');
+            programParagraph.textContent = 'Program/Major: ' + degreeData.program;
+
+            var typeParagraph = document.createElement('p');
+            typeParagraph.textContent = 'Type: ' + degreeData.type;
+
+            var yearParagraph = document.createElement('p');
+            yearParagraph.textContent = 'Year Conferred: ' + degreeData.year_conferred;
+
+            degreeContainer.appendChild(schoolHeading);
+            degreeContainer.appendChild(programParagraph);
+            degreeContainer.appendChild(typeParagraph);
+            degreeContainer.appendChild(yearParagraph);
+
+            outputContainer.appendChild(degreeContainer);
+          });
+        })
+        .catch(function (error) {
+          console.error('Error:', error);
+        });
+    });
+  </script>
+</body>
+</html>

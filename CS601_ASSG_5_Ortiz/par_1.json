@@ -1,0 +1,16 @@
+{
+    "degrees": [
+      {
+        "school": "Antelope Valley College",
+        "program": "Manufacturing Technology",
+        "type": "BS",
+        "year_conferred": 2021
+      },
+      {
+        "school": "Boston University",
+        "program": "Software Development",
+        "type": "MS",
+        "year_conferred": 2024
+      }
+    ]
+  }
