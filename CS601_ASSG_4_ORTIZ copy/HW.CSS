@@ -1,0 +1,177 @@
+
+  
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 600px) {
+    
+
+    .outer-container {
+        background-color: rgb(212, 83, 58); 
+        padding: 40px;
+      }
+      
+      .inner-container {
+        font-family: Arial, sans-serif;
+        border: 5px solid black;
+        padding-inline: 15%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        background-color: white; 
+      }
+
+    form {
+        width: 200px;
+      }
+
+    h2 {
+      text-align: center;
+      border: 2px solid black;
+      background: linear-gradient(to top,black,rgb(168, 162, 162));
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      margin-top: 100px;
+      padding: 1px;
+      }
+
+      table{
+
+      
+
+        border: 2px solid #0b3a46;
+        background-color: rgb(208, 208, 208);
+        margin-bottom: 20px;
+      }
+    
+
+  }
+  
+  /* Medium screens */
+
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .outer-container {
+        background-image: url(images/BU.jpeg); 
+        background-size: cover;
+        background-position: center;
+        padding: 60px;
+      }
+      
+      .inner-container {
+        font-family: Arial, sans-serif;
+        border: 5px solid black;
+        padding-inline: 30%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        background-color: white; 
+      }
+    
+    form {
+        width: 250px;
+      }
+
+      .radio-group {
+        display: flex;
+        align-items: baseline;
+      }
+      
+  
+    h2 {
+    width:fit-content;
+    border: 2px solid black;
+    background-color: #b3b1b1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 1px;
+    }
+
+
+th, td {
+  padding: 8px;
+  border: 1px solid black;
+  background-color: #ccc7c7;
+}
+    
+    
+    
+
+    
+    
+  }
+  
+  /* Large screens */
+
+  @media screen and (min-width: 1025px) {
+    .outer-container {
+        background-image: url(images/BU.jpeg); 
+        background-size: cover;
+        background-position: center;
+        padding: 60px;
+      }
+      
+      .inner-container {
+        font-family: Arial, sans-serif;
+        border: 5px solid black;
+        padding-inline: 15%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        background-color: white; 
+      }
+    
+
+    form {
+        width: 600px;
+      }
+
+      .radio-group {
+        display:flex;
+        align-items:baseline;
+      }
+    
+   
+    th, td {
+        align-content: center;
+        width: 1000px;;
+        padding: 6px;
+        border: 3px solid black;
+        background-color: #b1b7b8;
+        
+      }
+    
+
+  }
+  

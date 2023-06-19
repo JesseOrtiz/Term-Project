@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <link rel="stylesheet" type="text/css" href="HW.CSS">
+</head>
+<body>
+  <div class="outer-container">
+    <div class="inner-container">
+      <form id="myForm" action="https://cs601.bu-courseexamples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br>
+        <label for="facilitator">Facilitator:</label>
+        <input type="text" id="facilitator" name="facilitator" required>
+        <br>
+        <br>
+        <br>
+        <label>You feel your facilitator has been available to help throughout the course:</label>
+        <br>
+        <div class="radio-group">
+          <table>
+            <tr>
+              <td>
+                <input type="radio" id="option1" name="options" value="Option 1">
+                <label for="option1">Strongly Agree</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" id="option2" name="options" value="Option 2">
+                <label for="option2">Agree</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" id="option3" name="options" value="Option 3">
+                <label for="option3">Neutral</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" id="option4" name="options" value="Option 4">
+                <label for="option4">Disagree</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" id="option5" name="options" value="Option 5">
+                <label for="option5">Strongly Disagree</label>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <br>
+        
+        <label>Select all that apply:</label>
+
+        <br>
+        <input type="checkbox" id="checkbox1" name="checkboxes" value="Checkbox 1">
+        <label for="checkbox1">Registered to MS software Development program</label>
+        <br>
+        <input type="checkbox" id="checkbox2" name="checkboxes" value="Checkbox 2">
+        <label for="checkbox2">Registered to Certificate program</label>
+        <br>
+        <input type="checkbox" id="checkbox3" name="checkboxes" value="Checkbox 3">
+        <label for="checkbox3">Registered to other MS degree program</label>
+        <br>
+        <input type="checkbox" id="checkbox4" name="checkboxes" value="Checkbox 4">
+        <label for="checkbox4">You have programming experience from previous courses at BU</label>
+        <br>
+        <input type="checkbox" id="checkbox5" name="checkboxes" value="Checkbox 5">
+
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+        </div>
+        </div>
+
+  <script>
+    const form = document.getElementById('myForm');
+    const firstNameInput = document.getElementById('firstName');
+    const lastNameInput = document.getElementById('lastName');
+    const facilitatorInput = document.getElementById('facilitator');
+
+    form.addEventListener('submit', function(event) {
+      if (!validateFirstName(firstNameInput.value) || !validateLastName(lastNameInput.value) || !validateFacilitator(facilitatorInput.value)) {
+        event.preventDefault();
+      }
+    });
+
+    function validateFirstName(firstName) {
+      if (firstName.length < 2 || !/^[A-Za-z]+$/.test(firstName)) {
+        alert('Please enter a valid first name (minimum length: 2, only alphabetic characters).');
+        return false;
+      }
+      return true;
+    }
+
+    function validateLastName(lastName) {
+      if (lastName.length < 2 || !/^[A-Za-z]+$/.test(lastName)) {
+        alert('Please enter a valid last name (minimum length: 2, only alphabetic characters).');
+        return false;
+      }
+      return true;
+    }
+
+    function validateFacilitator(facilitator) {
+            const validFacilitators = ['Jen', 'Behdad', 'Chris', 'Christian', 'Josh'];
+
+if (!validFacilitators.includes(facilitator)) {
+  alert('Please enter a valid facilitator name.');
+  return false;
+}
+return true;
+}
+</script>
+</body>
+</html>
