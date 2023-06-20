@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        img.container {
+            display: block;
+            
+            border-radius: 50%;
+            width: 300px;
+            height: 310px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .h2 {
+            font-weight: bold;
+            
+        }
+        h5{
+        padding-right: 40%;
+        padding-left: 10%;
+        }
+
+
+    </style>
+   </head>
+   
+   <body>
+    <header>
+        <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+        <nav id="navbar" style="display: none;">
+            <a href="Home.html">Home</a>
+            <a href="Biography.html">Biography</a>
+            <a href="Interests.html">Interests</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Photo Gallery.html">Photo Gallery</a>
+            <a href="Contactme.html">Contact me</a>
+        </nav>
+        
+        <h1>Welcome to Jesse's page!</h1>
+    </header>
+    
+    <main>
+        <img src="images/220310PMJT181_Jesse Ortiz8x10 2.jpg" alt="Profile picture" class="container">
+        
+        <strong>
+            <h2 class="h2">About Me:</h2>
+        </strong>
+    
+        <h5 class = "h5">Thank you for visiting my page! I am a MS of software development Student
+        </h5>
+    </main>
+    
+    <script>
+        function toggleNav() {
+            var navbar = document.getElementById('navbar');
+            navbar.style.display = navbar.style.display === 'none' ? 'block' : 'none';
+            var hamburger = document.querySelector('.hamburger');
+            hamburger.classList.toggle('open');
+        }
+    </script>
+   </body>
+</html>

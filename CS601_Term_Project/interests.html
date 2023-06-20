@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Interests</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h5 {
+            text-align: left;
+            padding-left: 10PX;
+
+        }
+        
+        .container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        
+        .container img {
+            
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+   </head>
+   
+   <body>
+    <header>
+        <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+        <nav id="navbar" style="display: none;">
+            <a href="Home.html">Home</a>
+            <a href="Biography.html">Biography</a>
+            <a href="Interests.html">Interests</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Photo Gallery.html">Photo Gallery</a>
+            <a href="Contactme.html">Contact me</a>
+        </nav>
+        
+        <h1>Interests</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h5>I am a fan of watching movies in my free time. I enjoy watching movies from various genres,
+                and most recently, I watched Scream IV. I also enjoy watching sports, such as basketball 
+                and UFC, when I have the time. My favorite basketball team is the Los Angeles Lakers. 
+                Basketball games are particularly exciting during the playoffs at the end of the season around April and May.
+                There is a UFC fight card most weekends that I often watch. For some pictures and videos of my interests,
+                please visit my interests page.
+            </h5>
+        </div>
+        
+        <div class="container">
+            <strong>
+                <h2>NBA</h2>
+            </strong>
+            <h5>My favorite team is the Los Angeles Lakers!</h5>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LG7vOkL0UFE" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="container">
+            <img src="images/Lakers.jpg" alt="Lakers" width="550">
+        </div>
+
+        <div class="container">
+            <strong>
+                <h2>UFC</h2>
+            </strong>
+        </div>
+
+        <div class="container">
+            <img src="images/UFC.png" alt="UFC" width="350">
+        </div>
+
+        <div class="container">
+            <strong>
+                <h2>MOVIES</h2>
+            </strong>
+        </div>
+
+        <div class="container">
+            <img src="images/movies.jpg" alt="MOVIES" width="500">
+        </div>
+    </main>
+    <script>
+        function toggleNav() {
+            var navbar = document.getElementById('navbar');
+            navbar.style.display = navbar.style.display === 'none' ? 'block' : 'none';
+            var hamburger = document.querySelector('.hamburger');
+            hamburger.classList.toggle('open');
+        }
+    </script>
+   </body>
+</html>

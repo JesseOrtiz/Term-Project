@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Contactme</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    
+   </head>
+   
+   <body>
+    <header>
+        <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+        <nav id="navbar" style="display: none;">
+            <a href="Home.html">Home</a>
+            <a href="Biography.html">Biography</a>
+            <a href="Interests.html">Interests</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Photo Gallery.html">Photo Gallery</a>
+            <a href="Contactme.html">Contact me</a>
+
+
+        </nav>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+        
+        <h1>Contact me</h1>
+        <style>
+            img.container{
+                text-align: center;
+            }
+
+            h2{
+                padding-left: 1%;
+            }
+            input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+        </style>
+        
+
+
+        
+
+    </header>
+    <main>
+        <div class="formHeader">
+            <h2>CONTACT FORM</h2>
+            <p>Please fill out the form below to get in touch with us.</p>
+          </div>
+        <form id="myForm" action="termproject.great-site.net" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="Message">Message:</label>
+            <input type="text" id="message" name="message" required>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        <img src="images/contact.png" alt="Description of the image" width=" 400">
+        <h2>EMAIL:</h2>
+        <h2\> Jessebryan1297@gmail</h2>
+        <h2>PHONE:</h2>
+        <h2\> (122)-123-456</h2>
+        <h2>LINKEDIN (CLICK ON LINK):</h2>
+        <a href="https://www.linkedin.com/in/jesse-ortiz-201704196">LinkedIn Profile</a>
+
+       
+
+    </main>
+    <script>
+        function toggleNav() {
+            var navbar = document.getElementById('navbar');
+            navbar.style.display = navbar.style.display === 'none' ? 'block' : 'none';
+            var hamburger = document.querySelector('.hamburger');
+            hamburger.classList.toggle('open');
+}
+
+const form = document.getElementById('myForm');
+const firstNameInput = document.getElementById('firstName');
+const lastNameInput = document.getElementById('lastName');
+const EmailInput = document.getElementById('email');
+const MessageInput = document.getElementById('message');
+
+form.addEventListener('submit', function (event) {
+  if (!validateFirstName(firstNameInput.value) || !validateLastName(lastNameInput.value) || !validateEmail(EmailInput.value)) {
+    event.preventDefault();
+  }
+});
+
+function validateFirstName(firstName) {
+  if (firstName.length < 2 || !/^[A-Za-z]+$/.test(firstName)) {
+    alert('Please enter a valid first name (minimum length: 2, only alphabetic characters).');
+    return false;
+  }
+  return true;
+}
+
+function validateLastName(lastName) {
+  if (lastName.length < 2 || !/^[A-Za-z]+$/.test(lastName)) {
+    alert('Please enter a valid last name (minimum length: 2, only alphabetic characters).');
+    return false;
+  }
+  return true;
+}
+
+
+
+    </script>
+
+   </body>
+
+</html>

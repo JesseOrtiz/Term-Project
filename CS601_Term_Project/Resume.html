@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Work</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    
+   </head>
+   
+   <body>
+    <header>
+      <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+      <nav id="navbar" style="display: none;">
+        <a href="Home.html">Home</a>
+        <a href="Biography.html">Biography</a>
+        <a href="Interests.html">Interests</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Resume.html">Resume</a>
+        <a href="Photo Gallery.html">Photo Gallery</a>
+        <a href="Contactme.html">Contact me</a>
+
+
+        </nav>
+        <style>
+    .resume-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .resume-links a {
+      margin: 0 10px;
+      padding: 5px 10px;
+      background-color: #ccc;
+      text-decoration: none;
+    }
+            h1{
+                text-align: center;
+            }
+        </style>
+        
+        <h1>Jesse's page!</h1>
+        <style>
+            img.container{
+                text-align: center;
+            }
+        </style>
+        
+
+
+        
+
+    </header>
+    <main>
+      <img src="images/my-work-experience.JPG" alt="Description of the image" width=" 250">
+      <h2>DOWNLOAD LINKS</h2>  
+      <div class="resume-links">
+      <a href="text files/Jesse_Ortiz-RESUME_1 copy.docx" download>Word Doc - Resume</a>
+      <a href="text files/Jesse_Ortiz-RESUME_1 copy.pdf" download>PDF - Resume</a>
+    </div>
+      <br>
+      <br>
+      <BR>
+      <br>  
+      <h1>Resume</h1>
+
+      <div class="section">
+        <h2>SUMMARY</h2>
+        <p>
+          Energetic, reliable, team player with over 3 years' experience in Aerospace as an Aircraft Mechanic and a Manufacturing Engineer.
+          Proven ability to take on new challenges as a fast learner effectively working with Aircraft structures, Composites, Hydraulics, Electrical,
+          and Augmented Reality Manufacturing Technology.
+          Ability to communicate across different organizations and teams to achieve goals.
+          Experience successfully working in fast-paced environments.
+        </p>
+      </div>
+    
+      <div class="section">
+        <h2>SKILLS</h2>
+        <ul>
+          <li>CAD software: CPLM, NX, CATIA</li>
+          <li>Experience in production</li>
+          <li>HoloLens 2 Devices</li>
+          <li>Microsoft Office</li>
+          <li>Lean management & six sigma</li>
+          <li>Technical writing</li>
+          <li>Manufacturing Software: MES</li>
+          <li>Communication skills</li>
+          <li>Blueprint reading</li>
+        </ul>
+      </div>
+    
+      <div class="section">
+        <h2>EXPERIENCE</h2>
+        <h3>01/2022 – Present: Associate Manufacturing Systems Engineer, Northrop Grumman | Palmdale, CA</h3>
+        <ul>
+          <li>Received BRAVO award for my work to meet milestones with Augmented Reality.</li>
+          <li>Review and interpret Blueprints, Engineering Orders, and 3D models to create work instructions.</li>
+          <li>Work with Augmented Reality Technology to improve manufacturing processes.</li>
+          <li>Interface/communicate with multiple levels of leadership, Engineering, clients, and vendors to meet goals.</li>
+          <li>Support and provide demonstrations of AR technology to Frontline leadership, Engineering Organizations, multiple programs, Space sector, and Defense sector.</li>
+          <li>Work projects concurrently across multiple programs while meeting customer requirements/expectations.</li>
+          <li>Software’s used: NX, CPLM, CATIA, VAS, Vis Pro, Create 2, Pixyz Studio.</li>
+          <li>Interface with shop floor mechanics, leads, and liaison ME to improve processes and reduce build time.</li>
+        </ul>
+    
+        <h3>06/2019 – 01/2022: Aircraft Mechanic, Northrop Grumman | Palmdale, CA</h3>
+        <ul>
+          <li>Experience and certification in Structures, Composites, Electrical and Systems.</li>
+          <li>Read and interpret blueprints.</li>
+          <li>Fabrication of metallic and composite structures using methods including precision drilling and countersinking.</li>
+          <li>Working with composites using wet layups, pre preg material, core materials, vacuum bagging schedule, epoxies, and resins.</li>
+          <li>Assemble, install and Perform maintenance of hydraulic systems.</li>
+          <li>Install electrical components.</li>
+        </ul>
+    
+        <h3>05/2016 – 05/2019: Sheriff Cadet, Antelope Valley College | Lancaster, CA</h3>
+        <ul>
+          <li>Job functions - safety services, Law enforcement police dispatch operations, public relations, Investigation assistance.</li>
+        </ul>
+      </div>
+    
+      <div class="section">
+        <h2>EDUCATION</h2>
+        <h3>07/2022 – Present: Master of Science: Software Development, Boston University | Boston, MA</h3>
+        <h3>Graduated 12/2021: Bachelor of Science: Airframe Manufacturing Technology, Antelope Valley College | Lancaster, CA</h3>
+        <h3>Completed 06/2019: Certificate: Aircraft Fabrication and Assembly, Antelope Valley College | Lancaster, CA</h3>
+      </div>
+    
+    </main>
+    <script>
+      function toggleNav() {
+        var navbar = document.getElementById('navbar');
+        navbar.style.display = navbar.style.display === 'none' ? 'block' : 'none';
+        var hamburger = document.querySelector('.hamburger');
+        hamburger.classList.toggle('open');
+      }
+  </script>
+
+
+   </body>
+
+</html>
