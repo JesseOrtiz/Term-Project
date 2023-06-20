@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Biograpghy</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        img.container {
+            display: block;
+            
+            border-radius: 50%;
+            width: 300px;
+            height: 310px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .h2 {
+            font-weight: bold;
+            
+        }
+
+
+    </style>
+   </head>
+   
+   <body>
+    <header>
+        <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+        <nav id="navbar" style="display: none;">
+            <a href="Home.html">Home</a>
+            <a href="Biography.html">Biography</a>
+            <a href="Interests.html">Interests</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Photo Gallery.html">Photo Gallery</a>
+            <a href="Contactme.html">Contact me</a>
+        </nav>
+        
+        <h1>Biography</h1>
+    </header>
+    
+    <main>
+        <img src="images/220310PMJT181_Jesse Ortiz8x10 2.jpg" alt="Profile picture" class="container">
+        
+        <strong>
+            <h2 class="h2">Early Life and Education:</h2>
+        </strong>
+    
+        <h5 class = "h5">I was born in Lancaster, California, and grew up in 
+            Palmdale, ca. After completing my high school education at Palmdale High School, 
+            I decided to pursue further studies at Antelope Valley College. 
+            There, I enrolled in the Airframe Manufacturing Technology program and successfully 
+            completed my Bachelor of Science degree in 2021. Additionally, I obtained a Certificate 
+            in Aircraft Fabrication and Assembly.
+        </h5>
+
+        <strong>
+            <h2 class="h2">Career in Aerospace:</h2>
+        </strong>
+    
+        <h5 class = "h5">Following my education, I began my career in the aerospace field 
+            as an Aircraft Mechanic at Northrop Grumman in Palmdale, California. From 2019 
+            to 2022, I gained valuable experience working on various aspects of aircraft 
+            maintenance and repair, including structures, composites, electrical systems, 
+            and hydraulic systems. I honed my skills in blueprint reading, fabrication 
+            techniques, and the installation of components. I transitioned into the role 
+            of Associate Manufacturing Systems Engineer at Northrop Grumman in early 2022. 
+            In this position, I have been involved in leveraging augmented reality (AR) 
+            technology to enhance manufacturing processes. 
+        </h5>
+
+        <strong>
+            <h2 class="h2">Future Goals:</h2>
+        </strong>
+    
+        <h5 class = "h5">In pursuit of further professional growth and to expand my 
+            knowledge in the field of technology, I am currently pursuing a Master of 
+            Science degree in Software Development at Boston University. This program 
+            aligns with my passion for leveraging technology to drive 
+            innovation and optimize processes in the aerospace industry. By combining 
+            my expertise in manufacturing technology with software development skills, 
+            I aim to contribute to the advancement of aerospace manufacturing practices 
+            and stay at the forefront of the industry.
+        </h5>
+    </main>
+    
+    <script>
+        function toggleNav() {
+            var navbar = document.getElementById('navbar');
+            navbar.style.display = navbar.style.display === 'none' ? 'block' : 'none';
+            var hamburger = document.querySelector('.hamburger');
+            hamburger.classList.toggle('open');
+        }
+    </script>
+   </body>
+</html>

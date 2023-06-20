@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    
+   </head>
+   
+   <body>
+    <header>
+      <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+      <nav id="navbar" style="display: none;">
+        <a href="Home.html">Home</a>
+        <a href="Biography.html">Biography</a>
+        <a href="Interests.html">Interests</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Resume.html">Resume</a>
+        <a href="Photo Gallery.html">Photo Gallery</a>
+        <a href="Contactme.html">Contact me</a>
+
+
+        </nav>
+        <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      width: 300px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+            h1{
+                text-align: center;
+            }
+        </style>
+        
+        <h1>Photos</h1>
+        <style>
+            img.container{
+                text-align: center;
+            }
+        </style>
+        
+
+
+        
+
+    </header>
+    <main>
+      
+      <h1>Photo Gallery</h1>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/73FAE7B7-BFB4-4DF5-AD08-009D193FBE28.JPG" alt="Photo 1">
+        </div>
+    
+        <div class="gallery-item">
+            <video controls width="400" height="350">
+              <source src="images/IMG_9312.MOV" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+    
+        <div class="gallery-item">
+          <img src="images/E939B72F-F34A-42B4-95BA-6966FFD614FD.JPG" alt="Photo 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/B1C65234-6188-41FA-A4AF-8FBB4E795C2E.jpeg" alt="Photo 3">
+          </div>
+          <div class="gallery-item">
+            <img src="images/4B8E3917-5BA1-4C45-83B2-BE83F05BAE00.jpeg" alt="Photo 3">
+          </div>
+          <div class="gallery-item">
+            <img src="images/IMG_9273.JPG" alt="Photo 3">
+          </div>     
+
+    </main>
+    <script>
+      function toggleNav() {
+        var navbar = document.getElementById('navbar');
+        navbar.style.display = navbar.style.display === 'none' ? 'block' : 'none';
+        var hamburger = document.querySelector('.hamburger');
+        hamburger.classList.toggle('open');
+      }
+  </script>
+
+
+   </body>
+
+</html>
